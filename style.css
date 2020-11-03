@@ -24,6 +24,11 @@ body {
   .description{
     white-space: pre-wrap;
   }
+
+  .input-group-text{
+    height: 80px;
+    width: 115px;
+  }
   
   .time-block{
     text-align: center;
@@ -69,4 +74,10 @@ body {
     font-size: 20px;
     transition: all .3s ease-in-out;
   }
+
+  #input-box{
+    height: 80px;
+  }
+
+  
   
