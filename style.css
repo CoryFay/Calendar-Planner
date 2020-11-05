@@ -49,12 +49,12 @@ body {
   }
   
   .past {
-    background-color: #ff6961;
+    background-color: coral;
     color: white;
   }
   
   .present {
-    background-color: #d3d3d3;
+    background-color: #33aef5;
     color: white;
   }
   
