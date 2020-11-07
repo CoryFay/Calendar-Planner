@@ -63,7 +63,7 @@ $( document ).ready(function() {
     // console.log(typeof(changedTime1.value));
     // console.log(typeof(actualTime));
     
-    // 
+    // functions set to add classes to time blocks
     function setColorToNine() {
         if(changedTime9.value < actualTime){
             $('#input-box1').addClass('past');
@@ -180,54 +180,177 @@ $( document ).ready(function() {
             //console.log('future');
         }
     }
-   
+    //establishing global variables
     var input1 = document.querySelector('#input-box1');
+    var input2 = document.querySelector('#input-box2');
+    var input3 = document.querySelector('#input-box3');
+    var input4 = document.querySelector('#input-box4');
+    var input5 = document.querySelector('#input-box5');
+    var input6 = document.querySelector('#input-box6');
+    var input7 = document.querySelector('#input-box7');
+    var input8 = document.querySelector('#input-box8');
+    var input9 = document.querySelector('#input-box9');
 
+    //'onload' call the following functions to render the existing data
+     window.onload = function()
+    {   myFunction1(),
+        myFunction2(),
+        myFunction3(),
+        myFunction4(),
+        myFunction5(),
+        myFunction6(),
+        myFunction7(),
+        myFunction8(),
+        myFunction9()
+    };
+
+    //add event listener to 'btn1'
     $('.btn1').click(function(event){
         event.preventDefault();
-
-        var userInput = {
+        //making an object to contain the 'text' of input1
+        var userInput1 = {
             box1: input1.value.trim()
         }
-        
-        console.log(userInput.box1);
-
-        localStorage.setItem("userInput", JSON.stringify(userInput.box1));
-
-        
-     })
-     
-     var prevInput = JSON.parse(localStorage.getItem("userInput"));
-     
-     window.onload = function(){myFunction()};
-     
-     function myFunction() {
-     input1.textContent = prevInput;
-     var target = document.querySelector('#input-box1');
-     target.value += prevInput;
+        //saving this info to local storage
+        localStorage.setItem("userInput1", JSON.stringify(userInput1.box1));
+    })
+     //making a variable that gets the info of input1
+     var prevInput1 = JSON.parse(localStorage.getItem("userInput1"));
+     //function will display the stored data in 'input-box1'
+     function myFunction1() {
+     var target1 = document.querySelector('#input-box1');
+     target1.value += prevInput1;
         
      }
 
-    // event listener for saveBtn
-    // $('.saveBtn').click(function(event){
-    //     event.preventDefault();
+     $('.btn2').click(function(event){
+        event.preventDefault();
+        var userInput2 = {
+            box1: input2.value.trim()
+        }
+        localStorage.setItem("userInput2", JSON.stringify(userInput2.box1));
+    })
+     
+     var prevInput2 = JSON.parse(localStorage.getItem("userInput2"));
 
-    // })
+     function myFunction2() {
+     var target2 = document.querySelector('#input-box2');
+     target2.value += prevInput2;
+        
+     }
 
-    //event listener for clear button
-    // $('.clearBtn').click(function(event){
-    //     event.preventDefault();
-    //     $('#input-box1').empty();
-    //     $('#input-box2').empty();
-    //     $('#input-box3').empty();
-    //     $('#input-box4').empty();
-    //     $('#input-box5').empty();
-    //     $('#input-box6').empty();
-    //     $('#input-box7').empty();
-    //     $('#input-box8').empty();
-    //     $('#input-box9').empty();
-    // })
+     $('.btn3').click(function(event){
+        event.preventDefault();
+        var userInput3 = {
+            box1: input3.value.trim()
+        }
+        localStorage.setItem("userInput3", JSON.stringify(userInput3.box1));
+    })
+     
+     var prevInput3 = JSON.parse(localStorage.getItem("userInput3"));
 
+     function myFunction3() {
+     var target3 = document.querySelector('#input-box3');
+     target3.value += prevInput3;
+        
+     }
 
+     $('.btn4').click(function(event){
+        event.preventDefault();
+        var userInput4 = {
+            box1: input4.value.trim()
+        }
+        localStorage.setItem("userInput4", JSON.stringify(userInput4.box1));
+    })
+     
+     var prevInput4 = JSON.parse(localStorage.getItem("userInput4"));
+
+     function myFunction4() {
+     var target4 = document.querySelector('#input-box4');
+     target4.value += prevInput4;
+        
+     }
+
+     $('.btn5').click(function(event){
+        event.preventDefault();
+        var userInput5 = {
+            box1: input5.value.trim()
+        }
+        localStorage.setItem("userInput5", JSON.stringify(userInput5.box1));
+    })
+     
+     var prevInput5 = JSON.parse(localStorage.getItem("userInput5"));
+
+     function myFunction5() {
+     var target5 = document.querySelector('#input-box5');
+     target5.value += prevInput5;
+        
+     }
+
+     $('.btn6').click(function(event){
+        event.preventDefault();
+        var userInput6 = {
+            box1: input6.value.trim()
+        }
+        localStorage.setItem("userInput6", JSON.stringify(userInput6.box1));
+    })
+     
+     var prevInput6 = JSON.parse(localStorage.getItem("userInput6"));
+
+     function myFunction6() {
+     var target6 = document.querySelector('#input-box6');
+     target6.value += prevInput6;
+        
+     }
+
+     $('.btn7').click(function(event){
+        event.preventDefault();
+        var userInput7 = {
+            box1: input7.value.trim()
+        }
+        localStorage.setItem("userInput7", JSON.stringify(userInput7.box1));
+    })
+     
+     var prevInput7 = JSON.parse(localStorage.getItem("userInput7"));
+
+     function myFunction7() {
+     var target7 = document.querySelector('#input-box7');
+     target7.value += prevInput7;
+        
+     }
+
+     $('.btn8').click(function(event){
+        event.preventDefault();
+        var userInput8 = {
+            box1: input8.value.trim()
+        }
+        localStorage.setItem("userInput8", JSON.stringify(userInput8.box1));
+    })
+     
+     var prevInput8 = JSON.parse(localStorage.getItem("userInput8"));
+
+     function myFunction8() {
+     var target8 = document.querySelector('#input-box8');
+     target8.value += prevInput8;
+        
+     }
+
+     $('.btn9').click(function(event){
+        event.preventDefault();
+        var userInput9 = {
+            box1: input9.value.trim()
+        }
+        localStorage.setItem("userInput9", JSON.stringify(userInput9.box1));
+    })
+     
+     var prevInput9 = JSON.parse(localStorage.getItem("userInput9"));
+
+     function myFunction9() {
+     var target9 = document.querySelector('#input-box9');
+     target9.value += prevInput9;
+        
+     }
+
+   
    
 });
