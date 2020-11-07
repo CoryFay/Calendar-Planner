@@ -218,10 +218,11 @@ $( document ).ready(function() {
      var prevInput1 = JSON.parse(localStorage.getItem("userInput1"));
      //function will display the stored data in 'input-box1'
      function myFunction1() {
+         if (prevInput1 !== null){
      var target1 = document.querySelector('#input-box1');
      target1.value += prevInput1;
-        
-     }
+         }
+    }
 
      $('.btn2').click(function(event){
         event.preventDefault();
@@ -234,10 +235,11 @@ $( document ).ready(function() {
      var prevInput2 = JSON.parse(localStorage.getItem("userInput2"));
 
      function myFunction2() {
+         if (prevInput2 !== null){
      var target2 = document.querySelector('#input-box2');
      target2.value += prevInput2;
-        
-     }
+         }
+    }
 
      $('.btn3').click(function(event){
         event.preventDefault();
@@ -250,9 +252,10 @@ $( document ).ready(function() {
      var prevInput3 = JSON.parse(localStorage.getItem("userInput3"));
 
      function myFunction3() {
+        if (prevInput3 !== null){
      var target3 = document.querySelector('#input-box3');
      target3.value += prevInput3;
-        
+        }
      }
 
      $('.btn4').click(function(event){
@@ -266,9 +269,10 @@ $( document ).ready(function() {
      var prevInput4 = JSON.parse(localStorage.getItem("userInput4"));
 
      function myFunction4() {
+        if (prevInput4 !== null){
      var target4 = document.querySelector('#input-box4');
      target4.value += prevInput4;
-        
+        }
      }
 
      $('.btn5').click(function(event){
@@ -282,9 +286,10 @@ $( document ).ready(function() {
      var prevInput5 = JSON.parse(localStorage.getItem("userInput5"));
 
      function myFunction5() {
+        if (prevInput5 !== null){
      var target5 = document.querySelector('#input-box5');
      target5.value += prevInput5;
-        
+        }
      }
 
      $('.btn6').click(function(event){
@@ -298,9 +303,10 @@ $( document ).ready(function() {
      var prevInput6 = JSON.parse(localStorage.getItem("userInput6"));
 
      function myFunction6() {
+        if (prevInput6 !== null){
      var target6 = document.querySelector('#input-box6');
      target6.value += prevInput6;
-        
+        }
      }
 
      $('.btn7').click(function(event){
@@ -314,9 +320,10 @@ $( document ).ready(function() {
      var prevInput7 = JSON.parse(localStorage.getItem("userInput7"));
 
      function myFunction7() {
+        if (prevInput7 !== null){
      var target7 = document.querySelector('#input-box7');
      target7.value += prevInput7;
-        
+        }
      }
 
      $('.btn8').click(function(event){
@@ -330,9 +337,10 @@ $( document ).ready(function() {
      var prevInput8 = JSON.parse(localStorage.getItem("userInput8"));
 
      function myFunction8() {
+        if (prevInput8 !== null){
      var target8 = document.querySelector('#input-box8');
      target8.value += prevInput8;
-        
+        }
      }
 
      $('.btn9').click(function(event){
@@ -346,9 +354,10 @@ $( document ).ready(function() {
      var prevInput9 = JSON.parse(localStorage.getItem("userInput9"));
 
      function myFunction9() {
+        if (prevInput9 !== null){
      var target9 = document.querySelector('#input-box9');
      target9.value += prevInput9;
-        
+        }
      }
 
    
