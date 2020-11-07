@@ -1,7 +1,9 @@
 # Calendar-Planner
 
-## 
+## [Click me to visit the site!](https://coryfay.github.io/Calendar-Planner/)
 
+
+### About
 This repository will act as your daily planner. It was set up with time blocks for the normal working day; 9-5. 
 The time blocks will be color coded to correspond with the time of day, specifically by the hour. If the hour has passed the block will 
 notify you by changing colors to grey. There is a setting for the present hour, and also for future hours. 
