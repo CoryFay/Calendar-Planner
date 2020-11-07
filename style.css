@@ -23,7 +23,7 @@ body {
   }
 
   .container{
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
   
   .description{
@@ -72,19 +72,30 @@ body {
     margin: 20px 15px 20px 15px;
   }
   
-  .saveBtn {
+  .btn1,
+  .btn2,
+  .btn3,
+  .btn4,
+  .btn5,
+  .btn6,
+  .btn7,
+  .btn8,
+  .btn9 {
     padding: 20px;
     background-color: #06AED5;
     color: white;
   }
 
-  .clearBtn {
-    padding: 20px;
-    background-color: #06AED5;
-    color: white;
-  }
   
-  .saveBtn i:hover {
+  .btn1,
+  .btn2,
+  .btn3,
+  .btn4,
+  .btn5,
+  .btn6,
+  .btn7,
+  .btn8,
+  .btn9,  i:hover {
     font-size: 20px;
     transition: all .3s ease-in-out;
   }
