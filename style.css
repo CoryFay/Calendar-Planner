@@ -62,16 +62,30 @@ body {
     background-color: #77dd77;
     color: white;
   }
+
+  .btnCont {
+    text-align: center;
+    margin: 20px 15px 20px 15px;
+  }
   
   .saveBtn {
-    border-left: 1px solid black;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
+    padding: 20px;
+    background-color: #06AED5;
+    color: white;
+  }
+
+  .clearBtn {
+    padding: 20px;
     background-color: #06AED5;
     color: white;
   }
   
   .saveBtn i:hover {
+    font-size: 20px;
+    transition: all .3s ease-in-out;
+  }
+
+  .clearBtn i:hover {
     font-size: 20px;
     transition: all .3s ease-in-out;
   }

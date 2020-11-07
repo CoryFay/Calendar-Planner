@@ -2,7 +2,7 @@
     2. Establish starting page design via HTML and CSS. !!
     3. Add current date and time at top of webpage. !! 
     4. Make timeblocks reflective of what time of day it is. One color for past
-        one color for present and one color for future.
+        one color for present and one color for future. !!
     5. Allow time blocks to hold and save user input.
     6. Make sure user input remains apart of the page even on refresh. */
 
@@ -58,8 +58,8 @@ $( document ).ready(function() {
     // var nineBlock = $("#nine");
     // nineBlock.value = 9;
     //console.log(nineBlock.value);
-    console.log("Actual time " + actualTime);
-    console.log("Set to " + changedTime1.value);
+    // console.log("Actual time " + actualTime);
+    // console.log("Set to " + changedTime1.value);
     // console.log(typeof(changedTime1.value));
     // console.log(typeof(actualTime));
     
@@ -180,7 +180,53 @@ $( document ).ready(function() {
             //console.log('future');
         }
     }
+   
+    var input1 = document.querySelector('#input-box1');
 
+    $('.btn1').click(function(event){
+        event.preventDefault();
+
+        var userInput = {
+            box1: input1.value.trim()
+        }
+        
+        console.log(userInput.box1);
+
+        localStorage.setItem("userInput", JSON.stringify(userInput.box1));
+
+        
+     })
+     
+     var prevInput = JSON.parse(localStorage.getItem("userInput"));
+     
+     window.onload = function(){myFunction()};
+     
+     function myFunction() {
+     input1.textContent = prevInput;
+     var target = document.querySelector('#input-box1');
+     target.value += prevInput;
+        
+     }
+
+    // event listener for saveBtn
+    // $('.saveBtn').click(function(event){
+    //     event.preventDefault();
+
+    // })
+
+    //event listener for clear button
+    // $('.clearBtn').click(function(event){
+    //     event.preventDefault();
+    //     $('#input-box1').empty();
+    //     $('#input-box2').empty();
+    //     $('#input-box3').empty();
+    //     $('#input-box4').empty();
+    //     $('#input-box5').empty();
+    //     $('#input-box6').empty();
+    //     $('#input-box7').empty();
+    //     $('#input-box8').empty();
+    //     $('#input-box9').empty();
+    // })
 
 
    
