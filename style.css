@@ -115,6 +115,8 @@ body {
   #input-box8,
   #input-box9 {
     height: 80px;
+    text-align: center;
+    font-size: 24px;
   }
 
   
